@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sendletter()">click me</button>
+    <p id="letter"></p>
+</body>
+<script>
+    function sendletter() {
+        let name = prompt ("Nhập vào tên người gửi")
+        let address = prompt ("Nhập vào địa điểm gửi")
+        let time = prompt ("Nhập vào thời gian gửi")
+        document.getElementById("letter").innerHTML= "“ " +name+ " thương nhớ," + "<br>"+
+        "Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều. Em yêu anh đến khi trái tim này tan thành nghìn mảnh. "+
+        " Em nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay. Đêm nay, em chỉ muốn được gần bên anh… và anh biết không, trái tim em đang đau đớn đến nhường nào."+
+        "Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều."+ address+ ", " + time+".”"
+    }
+</script>
+</html>
