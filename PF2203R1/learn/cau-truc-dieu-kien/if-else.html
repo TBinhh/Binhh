@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h2>What is the "official" name of JavaScript?</h2> -->
+    <!-- <input type="text" id="answer"> -->
+    <h2 id="check"></h2>
+</body>
+<script>
+    let ask = prompt ('What is the "official" name of JavaScript?','');
+    if (ask == "ECMAScript") {
+        
+            document.getElementById("check").innerText = "Right!";
+        
+        } else {
+            document.getElementById("check").innerText = "Didn't know?";
+        }
+      
+</script>
+
+</html>
