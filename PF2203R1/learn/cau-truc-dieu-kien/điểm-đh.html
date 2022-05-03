@@ -12,7 +12,7 @@
     <h4>Môn Văn<input type="number" id="liter"></h4>
     <h4>Môn Anh<input type="number" id="Eng"></h4>
     <h4>Khu vực
-        <select>
+        <select id="select" >
             <option value="0.75">KV1</option>
             <option value="0.5">KV2-NT</option>
             <option value="0.25">KV2</option>
@@ -20,14 +20,16 @@
         </select>
     </h4>
     <button onclick="click()">Tính điểm</button>
-    <h4 id="result"></h4>
+    <h4 >Tổng điểm ĐH khối D của bạn là:<p id="result"></p> </h4>
 </body>
 <script>
     function click() {
-        let math = document.getElementById('math').value;
-        let liter = document.getElementById('liter').value;
-        let Eng = document.getElementById('Eng').value;
-        let KV = document.getElementById('Eng').value;
+        let math = parseFloat(document.getElementById("mat").value)
+        let liter = parseFloat(document.getElementById("liter").value)
+        let Eng = parseFloat(document.getElementById("Eng").value)
+        let KV = parseFloat(document.getElementById("select").value)
+        // let result = 
+        document.getElementById("result").innerHTML = (math + liter + Eng + KV)
     }
 </script>
 </html>
