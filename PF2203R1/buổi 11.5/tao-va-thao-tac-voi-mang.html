@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="txtAdd">
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button>
+    <h5 id="result"></h5>
+</body>
+<script>
+    let nums = [];
+    let i = 0;
+    function add() {
+        nums[i] = document.getElementById("txtAdd").value;
+        i++;
+        document.getElementById("txtAdd").value = "";
+    }
+    function display() {
+        let e = "<hr>"
+        for (let x = 0; x < nums.length; x++) {
+            e += "Element" + x + "=" + nums[x]+"<br>";
+            document.getElementById("result").innerHTML = e;
+        } 
+    }
+
+</script>
+
+</html>

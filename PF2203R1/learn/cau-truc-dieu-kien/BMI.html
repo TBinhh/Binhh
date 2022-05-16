@@ -14,7 +14,7 @@
 <script>
     let height = +prompt("Nhập chiều cao", "")
     let weight = +prompt("Nhập cân nặng", "")
-    let BMI = weight / (height * height)
+    let BMI = weight/ Math.pow(height, 2)
     if (BMI < 16) {
         alert("Gầy cấp độ III");
     } else if (BMI < 17) {
@@ -29,7 +29,7 @@
         alert("Béo phì cấp độ I");
     } else if( BMI < 40) {
         alert("Béo phì cấp độ II");
-    } else if( BMI > 40) {
+    } else ( BMI > 40) {
         alert("Béo phì cấp độ III");
     }
 

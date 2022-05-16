@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhập một số từ 0 đến 5</h2>
+    <input id="num"> <button onclick="check()">Nhập</button>
+    <h2 id="result"></h2>
+</body>
+<script>
+function check() {
+    let num = parseInt(document.getElementById("num").value)
+   
+    let text = "";
+    if (num < 5) {
+        for (let i = 0; i< num; i+=1) {
+        text += "The number is "+ i + "<br>" ;
+    }
+    document.getElementById("result").innerHTML = text;
+
+    } else document.getElementById("result").innerHTML = "Nhập số sai";
+   
+}
+</script>
+</html>

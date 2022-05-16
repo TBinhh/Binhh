@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // break của for
+    for (let i = 0; i < 10; i++) {
+        if (i==5) {
+            break
+        }
+        console.log("hello"+i)
+    }
+    console.log("........................")
+    // continue
+    for (let i = 0; i < 10; i++) {
+        if (i==5) {
+            continue
+        }
+        console.log("hello"+i)
+    }
+    console.log("........................")
+    // for lồng- mỗi lần for ngoài chạy 1 lần thì for trong chạy đủ số lần chạy của nó 
+    for (let i = 0; i < 5; i++) {
+        console.log("hello" + i)
+        for (let j = 0; j<5;j++) {
+            console.log("bye" + j)
+        }
+    }
+</script>
+</html>
