@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // ví dụ về hàm
+    function display() {
+        console.log("hello");
+    }
+    // gọi hàm
+    display()
+
+    // anoymous- arrow
+    let array = [1,5,3,2,8]
+    // anonymous - ẩn danh
+    array.sort(function(a,b) {
+        return a-b
+    })
+    console.log(array);
+    // arrow
+    array.sort((a,b) => {
+        return a-b
+    })
+    console.log(array);
+    // các loại hàm thông dụng
+    // hàm k tham số, k giá trị trả về: hàm logic
+    function sum1() {
+        let num1 = 10
+        let num2 = 20
+        let sum = num1 + num2
+        console.log("Kết quả sum1: " + sum)
+
+    }
+    sum1()
+    // hàm k tham số, k gt trả về
+    // hàm k tham số, có giá trị trả về
+    // hàm có tham số, có gt trả về
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="conver" id="conver" >
+        <option value="0.305">Meter</option>
+        <option value="3.279">Foot</option>
+    </select>
+    <input id="value" onchange="change()">
+    <p>Chuyển đổi thành: <span id="result"></span></p>
+</body>
+<script>
+    function change() {
+        let num = parseInt(document.getElementById("value").value);
+        if (document.getElementById("conver").value == 0.305) {
+            document.getElementById("result").innerHTML = 3.279 * num + " Feet";
+        } else document.getElementById("result").innerHTML = 0.305 * num + " Meter";
+    }
+
+</script>
+</html>

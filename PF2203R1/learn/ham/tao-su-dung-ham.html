@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // bai 1
+    // let num1 = +prompt("nhập số thứ nhất")
+    // let num2 = +prompt("nhập số thứ hai")
+    // function result(a,b) {
+    //     if (a > b) {
+    //         alert("Số thứ nhất lớn hơn số thứ hai");
+           
+    //     } else sum = a + b; 
+    //     alert("tổng của hai tham số là " + sum)
+    // } 
+    // result(num1,num2)
+
+    // bai 2
+    let arr1 = ["Polaris","Alde","Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let arr2 = ["Ursa", "Tarurus","Cygnus","Lyra","Aquila","Ursa Maor","Leo"];
+    let name = prompt("Nhập vào tên ngôi sao");
+    function findStar() {
+        for (let i = 0; i < arr1.length; i++) {
+            if (name == arr1[i]) {
+                alert ("Tên ngôi sao là: "+arr1[i]);
+                alert ("Tên chòm sao là: " + arr2[i]);
+            } else alert("Đó không phải là tên ngôi sao")
+        }
+    }
+    function findStar(name)
+</script>
+</html>
