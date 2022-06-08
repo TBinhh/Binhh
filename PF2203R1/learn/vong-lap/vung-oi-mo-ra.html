@@ -13,8 +13,8 @@
 </body>
 <script>
     function check() {
-        
-        if (pass === "Vung oi mo ra") {
+        let pass = document.getElementById("pass").value;
+        if (pass == "Vung oi mo ra") {
             document.getElementById("result").innerHTML = "Mo cua thanh cong";
         }  else  {
             document.getElementById("result").innerHTML = "Mo cua khong thanh cong";

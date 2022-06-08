@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="300" style="border: 1px solid;"></canvas>    <br>
+    <input id="dai">Chieu dai<br> <br>
+    <input id="rong"> Chieu rong<br> <br>
+    <button onclick="display()">Vẽ </button>
+    <button onclick="chuvi()">Tính Chu Vi </button> <p id="hienthichuvi"></p>
+    <button onclick="dientich()">Tính Diện Tích </button> <p id="hienthidientich"></p>
+</body>
+<script>
+    let ctx = document.getElementById("canvas").getContext("2d");
+    class rec{
+        chieuDai
+        chieuRong
+        constructor (chieuDai,chieuRong) {
+        this.chieuDai = chieuDai;
+        this.chieuRong = chieuRong;
+        
+        }
+        getchieuDai() {
+            return +document.getElementById("dai").value;
+        }
+        getchieuRong() {
+            return +document.getElementById("rong").value;
+        }
+        getdienTich() {
+            return this.chieuDai*this.chieuRong;
+                      
+        }
+        getchuVi() {
+            let chuVi = (this.chieuDai+this.chieuRong)*2;
+            return chuVi;
+        }
+        gethienThi(ctx){
+        ctx.clearRect(0,0,600,300);
+    
+        // ctx.beginPath();
+        ctx.fillStyle = "green";
+        ctx.fillRect(50,50, this.getchieuDai(), this.getchieuRong());
+                 
+        }
+    }
+    let rectangle = new rec();
+    function display() {
+        
+    }
+    function dientich() {
+        document.getElementById("hienthidientich").innerHTML = "Dien tich hcn là: " + dienTich;
+    }
+</script>
+</html>

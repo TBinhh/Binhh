@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Temp{
+        celsius
+        constructor (ceisius) {
+            this.celsius = ceisius
+        }
+        getCelsius(){
+            return this.celsius + "C"
+        }
+        getFahrenheit(){
+            return this.celsius*1.8+32+"F"
+        }
+        getKevil(){
+            return this.celsius + 273 +"K"
+        }
+        setCelsius(celsius) {
+            this.celsius = celsius
+        }
+    }
+    let temperature = new Temp(20)
+    console.log(temperature.getFahrenheit());
+    console.log(temperature.getKevil());
+
+    temperature.setCelsius(10);
+    console.log(temperature.getFahrenheit());
+    console.log(temperature.getKevil());
+</script>
+</html>

@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <input id="amount">
+    <select id="from" onchange="currency()"> 
+        <option value="vietnam">VietNam</option>
+        <option value="usd">USD</option>
+    </select>
     
+    <p id="result"></p>
 </body>
+<script>
+    
+    function currency() {
+        let money = +document.getElementById("amount").value;
+    let value = document.getElementById("from").value
+        if (value == "vietnam") {
+            let result = money / 23000;
+            document.getElementById("result").innerHTML = "Result: " + result +"USD";
+        }
+        let result = money *23000;
+        document.getElementById("result").innerHTML = "Result: " + result +"VNĐ";
+    }
+
+</script>
 </html>

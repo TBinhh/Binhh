@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="300" style="border: 1px solid;"></canvas>
+
+</body>
+<script>
+    class myCircle{
+        x
+        y
+        radius
+
+        constructor(x,y,radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+        getRadius() {
+            return this.radius;
+        }
+        // SET là đặt lại giá trị, trả về đúng tham số
+        setRadius(radius){
+            this.radius = radius;
+        }
+        getArea() {
+            return Math.PI*this.radius*this.radius;
+        }
+        drawCircle() {
+        let ctx = document.getElementById("canvas").getContext("2d");
+        ctx.beginPath();
+        ctx.arc(this.x,this.y, this.radius, 0, 2* Math.PI);
+        
+        ctx.fillStyle = "green";
+        ctx.fill();
+        }
+    }
+    // khởi tạo đối tượng và truyền tham số vào
+    let circle = new myCircle(50,50,80);
+
+    let area = circle.getArea()
+    console.log(area);
+
+    circle.getRadius(100);
+    console.log(radius);
+
+    circle.drawCircle();
+    // gọi phương thứ tương đương hàm
+</script>
+</html>
